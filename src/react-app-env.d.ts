@@ -2,7 +2,7 @@
 
 declare namespace NodeJS {
   interface ProcessEnv {
-    readonly NODE_ENV: 'development' | 'production' | 'test'
+    readonly NODE_ENV: 'development' | 'production' | 'test' // staging 빌드 시에도 NODE_ENV는 production이다.
     readonly PUBLIC_URL: string
     readonly REACT_APP_FIREBASE_API_KEY: string
     readonly REACT_APP_FIREBASE_AUTH_DOMAIN: string
